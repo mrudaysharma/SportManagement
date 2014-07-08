@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/Style.css" rel="stylesheet" type="text/css">
+<script src="ajaxjs.js"></script>
+<script type="text/javascript"
+	src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+</head>
+
+<body>
+	<div class="mainBody" id="mainBody">
+		<header class="signupHeader" id="signupHeader">Sign Up </header>
+		<form action="" method="get">
+			<table width="60%" border="0" align="center" cellpadding="10">
+				<tr>
+					<td>
+						<div class="uidLable" id="uidLable">User ID</div>
+					</td>
+					<td><div class="userIDdiv" id="userIDdiv">
+							<input type="text" name="userID" value="User ID" size="20" />
+						</div> <script>
+							genUID();
+						</script></td>
+				</tr>
+				<tr>
+					<td><div class="Country" id="Country">Country</div></td>
+					<td>
+						<div class="Countrydiv" id="Countrydiv">
+							<input type="text" name="CountryText" value="Country" size="20" />
+						</div> <script src="geolocationcountry.js">
+							initialize();
+						</script>
+					</td>
+				</tr>
+				<tr>
+					<td><div class="State" id="State">State</div></td>
+					<td><div class="statediv" id="statediv">
+							<input type="text" name="StateText" value="State" size="20" />
+						</div></td>
+				</tr>
+				<tr>
+					<td><div class="Sports" id="Sports">Sport</div></td>
+					<td><div class="sportsDiv" id="sportsDiv">
+					<input type="text" name="SportText" value="Sport" size="20" />
+					</div>
+					
+					</td>
+				</tr>
+				<tr>
+					<td><div class="Team" id="Team">Team</div></td>
+					<td><input type="text" name="Team" value="Team" size="20" /></td>
+				</tr>
+
+			</table>
+			<div class="Submit" id="Submit">
+				<input type="submit">
+			</div>
+
+		</form>
+
+
+
+	</div>
+</body>
+</html>
